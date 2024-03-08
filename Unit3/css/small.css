@@ -1,0 +1,149 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'rubik' ,sans-serif ;
+    --lightWeight: 300;
+    --heavyWeight: 700;
+    --primaryColor: #00635A; 
+    
+}
+
+
+nav {
+    position: sticky;
+top: 0px;
+background-color: var(--primaryColor);
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav a {
+    padding: .8rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: var(--heavyWeight);
+
+}
+nav a:hover {
+    background-color: #00E3CC;
+    color:white;
+}
+
+
+
+
+section#about {
+    background-color: #32A89C;
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+section#about h1 {
+    font-size: 2rem;
+    color: white;
+}
+section#about h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+section#projects {
+    background-color: #32A89C;
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    
+    
+}
+section#projects figcaption{
+    color: white;
+    text-decoration: underline;
+}
+div.theParent {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+div.theParent a{
+    flex-basis: 100%;
+    padding: 1rem 2vw;
+}
+section#projects figure {
+    margin: 0;
+    width: 100%;
+    
+    
+}
+section#projects img {
+    width: 100%;
+}
+
+
+section#contact {
+    background-color: #32A89C;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+section#contact h2 {
+    color: white;
+
+}
+section#contact ul{
+    display: flex;
+    justify-content: space-around;
+}
+section#contact li {
+list-style: none;
+}
+section#contact a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+
+}
+section#contact a img {
+ height: 50px;
+ display: block;
+ text-align: center;
+ width: 100%;
+ 
+}
+section#contact a:hover {
+    text-decoration: underline;
+    transform: translateY(4px);
+}
+
+footer p, footer span {
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    padding: 0;
+    background-color: white;
+}
