@@ -1,0 +1,35 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+header {
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(168, 43, 43);
+    color: white;
+    font-size: large;
+
+}
+#cards  {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet Ms', 'Lucida Sans Unicode', 'Lucida Sans', Arial,
+    sans-serif;
+    text-align: center;
+    background-color:rgb(42, 42, 136);
+    
+
+}
+#cards figure {
+    margin: 0 2%;
+    padding: 0;
+    flex-basis: 96%;
+    background-color: rgb(42, 42, 136);
+    color: white;
+}
+#cards img {
+    width: 100%;
+    
+
+}
