@@ -1,0 +1,79 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: black;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: black;
+    color: yellow;
+}
+
+nav {
+    display: flex;
+    flex-direction:row;
+    background-color: black;
+    padding: 1rem 2vw;
+}
+
+nav button {
+    background-color: yellow;
+    border: 1px solid black;
+    color: black;
+    padding: .9rem 2rem;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 20px;
+}
+
+
+
+
+#peopleHere {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#peopleHere figure {
+    margin: 10px;
+    padding: 0;
+    width: 150px;
+    border-radius: 10px;
+    
+}
+
+#peopleHere figure.female {
+    border: solid 4px pink;
+    color: white;
+  
+}
+#peopleHere figure.male {
+    border: solid 4px rgb(35, 35, 151);
+    color: white;
+   
+}
+#peopleHere figure.other {
+    border: solid 4px green;
+    color: white;
+}
+
+#peopleHere img {
+    width: 100%;
+}
+
+#peopleHere figcaption {
+    text-align: center;
+}
+#peopleHere figure img{
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+

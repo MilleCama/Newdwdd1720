@@ -1,6 +1,14 @@
-const btnRed = document.querySelector("#redImage")
-const btngreen = document.querySelector("#greenImage")
+const btnGrid = document.querySelector("#gridImage")
+const btnList = document.querySelector("#listImage")
+
 const pageBody = document.querySelector("body")
 
-btnRed.addEventListener('click', () => pageBody.className = "paintRed")
-btngreen.addEventListener('click', () => pageBody.className = "paintGreen")
+btnGrid.addEventListener('click', () => pageBody.className = "makeGrid")
+btnList.addEventListener('click', () => pageBody.className = "makeList")
+
+
+
+
+
+
+
