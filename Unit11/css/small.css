@@ -4,3 +4,54 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../images/d23qx3t-efba32fe-67f0-4289-90a0-a9fe6c26f387.jpg);
+
+}
+
+header h1{
+    color:black;
+    text-align: center;
+    background-color: orange;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav button{
+    width: 100%;
+    background-color: orange;
+
+}
+
+nav button:hover {
+    background-color: rgb(223, 225, 127);
+
+}
+
+main figure {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+main figure img{
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+
+}
+
+main figcaption {
+    color: white;
+    text-align: center;
+    text-shadow: 0cqh;
+
+}
+footer{
+    background-color:orange;
+    color:black;
+    text-align: center;
+}
