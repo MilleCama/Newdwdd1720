@@ -4,29 +4,83 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.container {
-    width: 90vw;
-    max-width: 800px;
-    margin: 50px auto;
+body.makeGrid div{background-color: rgba(39, 39, 108, 0.673);}
+body.makeGrid div h1 {color: black;}
+
+body.makeList div{background-color: rgba(39, 39, 108, 0.673);}
+body.makeList div h1 {color: bisque;}
+
+/** btton swticher */
+
+body.makeList header #listImage { 
+    display: none;}
+body.makeList header #gridImage { 
+    display: block;}
+
+body.makeGrid header #listImage {
+    display:block;}
+body.makeGrid header #gridImage {
+    display: none;}
+
+
+body.makeList .parent{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.btn {
-    height: 55px;
-    background: #2364d2;
-    color:white;
-    padding: 10px 20px;
-    margin-right: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 22px;
-    font-weight: 500;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 3px 10px 20px 0px;
+body.makeGrid .parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+body.makeGrid .parent section{
+    display: grid;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 2px 4px black;
+}
+body.makeList .parent section {
+    display: grid;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 2px 4px black;
+    
 }
 
-.card {
-    border: 1px solid black;
-    padding 10px;
-    background: white;
-    margin-bottom: 20px;
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+h1 {
+    color:yellow;
+    text-align: center;
+    background-color: black;
+    padding: none;
+}
+h2 {
+    color:yellow;
+    background-color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: yellow;
+}
+.highlight-text {
+    font-weight: bold;
+
+}
+header{
+    background-color: rgba(39, 39, 108, 0.673);
+    display: center;
+    padding: none;
+}
+
+
+
+
+
+
+
+
+
