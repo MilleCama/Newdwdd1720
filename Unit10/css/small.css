@@ -76,6 +76,7 @@ nav button {
 
 #allCards img {
     width:100%;
+    display: block;
     
 }
 #allCards figcaption {
