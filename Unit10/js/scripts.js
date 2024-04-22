@@ -73,7 +73,7 @@ function displayPeople (x) {
         myImage.alt = person.first_name
         const myphotoSize = "-100px.jpeg"
         const myCaption = document.createElement('figcaption')
-        myCaption.textContent = person.first_name , person.lastname
+        myCaption.textContent = person.first_name +" "+ person.last_name +" "+"from"+" "+ person.state+" "+ "is a "+ person.party +"."+" "+"Fax:"+" "+ person.fax
         
         
 
