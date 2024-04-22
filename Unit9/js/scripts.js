@@ -54,8 +54,7 @@ function displayPeople (x) {
      myImage.src=`https://starwars-visualguide.com/assets/img/characters/${charNumber}.jpg`
     myImage.alt = person.name
 
-     const myCaption = document.createElement('figcaption')
-     myCaption.textContent = person.name
+    
 
      //assign gender class
      console.log(person.gender)
