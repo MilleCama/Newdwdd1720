@@ -71,7 +71,7 @@ function displayPeople (x) {
         const charNumber = explodedArray[0]
         myImage.src=`//www.govtrack.us/static/legislator-photos/${charNumber}.jpeg`
         myImage.alt = person.first_name
-        const myphotoSize = "-100px.jpeg"
+        const  imageSize= `-50px.jpeg`
         const myCaption = document.createElement('figcaption')
         myCaption.textContent = person.first_name +" "+ person.last_name +" "+"from"+" "+ person.state+" "+ "is a "+ person.party +"."+" "+"Fax:"+" "+ person.fax
         

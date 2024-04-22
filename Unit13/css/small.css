@@ -4,3 +4,80 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;  
+}
+header {
+    background: #A0CBAD;
+    color: #fff;
+    padding: 1rem 2%;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #A0CBAD;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav button {
+    flex-basis: 48%;
+    margin: .5rem 1%;
+    padding: 1rem 0;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #A0CBAD;
+    
+}
+
+#viewer {
+    margin: .5rem 2%;
+    border-radius: 11px;
+    border: 3px solid #A0CBAD;
+    background-color: white;
+
+}
+#viewer img {
+    width: 100%;
+    display: block;
+}
+
+#viewer h2 {
+    margin: 0;
+    padding: .5rem;
+    background-color: #A0CBAD;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#viewer ul {
+    margin: 0;
+    padding: 0 0 .5rem 1rem;
+    margin-left: 20px;
+    color:black;
+}
+
+#viewer p {
+    padding: .1rem 2%;
+}
+
+#viewer li::marker{
+    content: '\2714';
+    color: #A0CBAD;
+    font-size: .8rem;
+}
+
+footer {
+    text-align: center;
+    background: #A0CBAD;
+    color: white;
+    padding: 1rem;
+}
