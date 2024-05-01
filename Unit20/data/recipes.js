@@ -40,7 +40,7 @@ export const recipes = [
         "4 large eggs",
         "Hot sauce"
       ],
-      "Directons": [
+      "Directions": [
         "Make the hash: Heat 1 tablespoon of the olive oil in an extra-large, heavy skillet over medium-high heat. Add the mushrooms, zucchini, and 1/4 teaspoon salt and cook, strirring every 1 to 2 minutes, until the vegetables are browned and slightly dried out, 5 to 6 minutes total. Remove to plate.",
         "Add the remaining 1/2 tablespoon oil to the skillet, then add the onion, green and red bell peppers, jalapeno, and the remaining 1/2 teaspoon salt. Cook, stirring occasionally, until the peppers wilt and char slightly, 6 to 7 minutes.",
         "Add the garlic, cumin, and smoked paprika and cook, strirring, until fragant, about 2 minutes.",
@@ -105,7 +105,7 @@ export const recipes = [
     },
     {
       "Dish": "Ham and Swiss Breakfast Strata",
-      "photo": "srata.jpg",
+      "photo": "strata.jpg",
       "Ingredients": [
         "8 ounces day-old whole-grain baguette",
         "2 large vine-ripened tomatoes, cored and cut into 1-inch cubes",

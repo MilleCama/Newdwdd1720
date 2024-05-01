@@ -10,7 +10,7 @@ recipes.forEach(recipe => {
     console.log(recipe)
     const myButton = document.createElement('button')
     myButton.textContent = `${recipe.Dish}`
-    myButton.addEventListener('click', showRecipe(recipe))
+    myButton.addEventListener('click', () => showRecipe(recipe))
     myNav.appendChild(myButton)
 })
 
@@ -18,29 +18,33 @@ recipes.forEach(recipe => {
 
 
 function showRecipe(recipe) {
-    console.log(recipe)
-
-
     let recipeSection = document.createElement("section")
     let recipeDish = document.createElement("h2")
     let recipePhoto = document.createElement("img")
     let recipeIngredients = document.createElement('ul')
     let recipeDirections = document.createElement('ul')
 
+    recipeDish.textContent = recipe.Dish
+    recipePhoto.src = `images/${recipe.photo}`
+    recipePhoto.alt = recipe.Dish
 
-recipeDish.textContent = recipe.Dish
-recipePhoto.src = `images/${recipe.photo}`
-recipePhoto.alt = recipe.Dish
-recipe.Ingredients.forEach(ingredient => {
-    //console.log(ingredient)
-    let theIngredient = document.createElement('li')
-    theIngredient.textContent = ingredient
-    recipeIngredients.appendChild(theIngredient)
-})
+    recipe.Ingredients.forEach(ingredient => {
+        let theIngredient = document.createElement('li')
+        theIngredient.textContent = ingredient
+        recipeIngredients.appendChild(theIngredient)
+    })
 
+    recipe.Directions.forEach(direction => {
+        let theDirection = document.createElement('li')
+        theDirection.textContent = direction
+        recipeDirections.appendChild(theDirection)
+    })
 
+    recipeSection.appendChild(recipeDish)
+    recipeSection.appendChild(recipePhoto)
+    recipeSection.appendChild(recipeIngredients)
+    recipeSection.appendChild(recipeDirections)
+    myViewer.textContent = ''
+    myViewer.appendChild(recipeSection)
 
-
-myViewer.appendChild(recipeIngredients)
-} // end of the function
-
+}
